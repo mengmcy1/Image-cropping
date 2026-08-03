@@ -1,1 +1,17 @@
-onnxruntime
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 模型权重（*.onnx 由 Git LFS 管理，见 .gitattributes）
+*.pth
+*.pt
+*.ckpt
+
+# 本地运行时产物（不提交）
+/结果/
+/tmp/
+
+# 项目自定义患者级参考数据（仅保留不含真实数据的 *.example.csv）
+/reference/validation_labels.csv
+/reference/pip_rect_overrides.csv
